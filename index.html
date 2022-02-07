@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage</title>
+    <style>
+      #navbar {
+        display: flex;
+        background-color: rgb(28, 41, 56);
+        color: white;
+        height: 50px;
+        padding: 25px 0 0 20px;
+        border-radius: 20px;
+        /* top right bottom left */
+      }
+      .left {
+        width: 70%;
+      }
+      .right {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #menu{
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      img{
+          width: 250px;
+          height: 250px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      
+      <div class="right">
+       
+        <div>Menu</div>
+        <div onclick="window.location.href='signin.html'">signIn</div>
+        <div onclick="window.location.href='signup.html'">SignUp</div>
+        <div onclick="window.location.href='cart.html'">cart</div>
+
+      </div>
+
+    </div>
+
+    <div id="menu">
+
+    </div>
+  </body>
+</html>
+
+<script src="index.js">
+    //we can do onlick by this method also.
+//  document.getElementById("menu").addEventListener("click",function(){
+//      window.location.href="menu.html";
+//  });
+
+// localStorage.setItem("name","masai school");
+// var x = localStorage.getItem("name");                 we can access local storage data from any page.
+//     console.log(x);
+</script>
